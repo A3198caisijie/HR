@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Class1
+    class Class2
     {
+        public int sada { get; set; }
+
     }
 }
