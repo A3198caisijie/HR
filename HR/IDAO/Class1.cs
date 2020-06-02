@@ -8,5 +8,9 @@ namespace IDAO
 {
     public class Class1
     {
+        public static void sd()
+        {
+
+        }
     }
 }
