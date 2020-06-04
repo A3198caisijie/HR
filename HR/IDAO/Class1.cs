@@ -8,6 +8,7 @@ namespace IDAO
 {
     public class Class1
     {
+        public int MyProperty { get; set; }
         public static void sd()
         {
             int i = 0;
