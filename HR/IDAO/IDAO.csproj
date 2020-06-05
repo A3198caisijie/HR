@@ -41,8 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salary_standardIDAO.cs" />
+    <Compile Include="UsersIDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFEntity\EFEntity.csproj">
+      <Project>{f8a3a760-c12a-42e5-86a2-d5b586621a39}</Project>
+      <Name>EFEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{e2261d57-72fd-4d65-aa9e-12592e5e3d7a}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -51,12 +51,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Salary_standardDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFEntity\EFEntity.csproj">
+      <Project>{f8a3a760-c12a-42e5-86a2-d5b586621a39}</Project>
+      <Name>EFEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAO\IDAO.csproj">
+      <Project>{a75642cc-7334-4449-9dd8-742e9a15252d}</Project>
+      <Name>IDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{e2261d57-72fd-4d65-aa9e-12592e5e3d7a}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -9,8 +9,9 @@ namespace EFEntity
 {
     public class HumanFile_dig//记录人力资源档案所做的任何更改
     {
-		[Key]
+		
 		//	hfd_id smallint identity not null,主键，自动增长列
+		[Key]
 		public int hfd_id { get; set; }
 		//human_id varchar(30) null,档案编号
 		public string human_id { get; set; }

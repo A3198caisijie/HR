@@ -99,6 +99,11 @@
     <Compile Include="HumanFile_dig.cs" />
     <Compile Include="Human_file.cs" />
     <Compile Include="Major_change.cs" />
+    <Compile Include="Migrations\202006040202394_inti1.cs" />
+    <Compile Include="Migrations\202006040202394_inti1.designer.cs">
+      <DependentUpon>202006040202394_inti1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salary_grant.cs" />
     <Compile Include="Salary_grant_details.cs" />
@@ -111,6 +116,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006040202394_inti1.resx">
+      <DependentUpon>202006040202394_inti1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
